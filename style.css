@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgb(117, 117, 231);
+    border-radius: 10px;
+}
+.header{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.turns span{
+    color: white;
+}
+.bottom{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.reset:hover{
+    color: white;
+    cursor: pointer;
+}
+.board{
+    margin: 10px;
+    background-color: teal;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: (3,1fr);
+    grid-gap: 6px;
+}
+.cell{
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(117, 117, 231);
+    cursor: pointer;
+    font-size: 110px;
+}
+
+.x::before{
+    content: '×';
+    color: white;
+}
+.o::before{
+    content: '○';
+}
+.won::before{
+    color: red;
+}
