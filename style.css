@@ -50,7 +50,7 @@ body{
     align-items: center;
     background-color: rgb(117, 117, 231);
     cursor: pointer;
-    font-size: 110px;
+    font-size: 100px;
 }
 
 .x::before{
